@@ -1,0 +1,112 @@
+@use "variables" as *;
+
+// LATO BOLD
+@font-face {
+    font-family:"Lato";
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+    font-weight: bold; 
+}
+
+// LATO REGULAR
+@font-face {
+    font-family:"Lato";
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+// LATO LIGHT
+@font-face {
+    font-family:"Lato";
+    src: url('../fonts/Lato/Lato-Light.ttf');
+    font-weight: light;
+}
+
+// PLAYFAIR DISPLAY SC
+@font-face {
+    font-family:"Playfair Display";
+     src: url('../fonts/PlayfairDisplaySC/PlayfairDisplaySC-BlackItalic.ttf');
+    // font-weight --> black italic (only one type)
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-weight: bold;
+}
+
+h1, .logo, .buttonContainer {
+    font-family: $logoFont;
+}
+
+h1 {
+    font-size: 5.56rem;
+    color: $twilight;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 58px;
+  letter-spacing: 3.8px;
+  color: $spruce;  
+}
+
+.articles h2 {
+    color: $twilight;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: $spruce; 
+}
+
+h4 {
+    font-size: 3.1rem;
+    line-height: 58px;
+    letter-spacing: 6.7px;
+    color: $spruce;
+}
+
+.logo {
+    font-size: 1.73rem;
+    color: $cyan;
+}
+
+.headerMenu {
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-weight: normal;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: $black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $iceBlue;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+svg {
+    color: $iceBlue;
+    background-color: $cyan;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+footer p {
+    color: $iceBlue;
+}

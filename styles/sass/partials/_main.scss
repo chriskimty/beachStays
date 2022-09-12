@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+// Section 1: VISIT
+.visit {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 150px auto 100px auto;
+
+        .visitTextContainer {
+            flex-basis: 65%;
+
+            .buttonContainer {
+                margin: 30px auto;
+            }
+        }
+
+        .visitImgContainer {
+            img {
+                box-shadow: -18px 17px 0px 0px $cyan;
+                -webkit-box-shadow: -18px 17px 0px 0px $cyan;
+                -moz-box-shadow: -18px 17px 0px 0px $cyan;
+            }
+        }
+    }   
+} 
+
+// Section 2: GALLERY
+
+.gallery {
+    background-color: $lightBlue;
+
+    .galleryContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
