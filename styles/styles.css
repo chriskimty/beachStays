@@ -330,8 +330,8 @@ footer p {
 }
 
 .wrapper {
-  max-width: 1200px;
-  width: 90%;
+  max-width: 1440px;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -378,8 +378,9 @@ img {
 
 header {
   background-image: url(../assets/home-image-1.jpg);
+  background-position: top center;
   background-size: cover;
-  height: 65vh;
+  height: 85vh;
   position: relative;
 }
 header .wrapper {
@@ -400,23 +401,25 @@ header .wrapper .headerMenu {
   display: flex;
 }
 header .wrapper .headerMenu li {
-  margin-left: 50px;
+  padding: 0 30px;
 }
-header .headerImgContainer img {
-  width: 43%;
-  max-width: 550px;
+
+.headerImgContainer img {
   position: absolute;
-  top: 200px;
+  top: 250px;
+  max-width: 45%;
+  max-height: 700px;
 }
-header .headerTextContainer h1 {
+
+.headerTextContainer h1 {
   position: absolute;
-  left: 30%;
-  bottom: 70px;
+  left: 36%;
+  bottom: 120px;
 }
-header .headerTextContainer h4 {
+.headerTextContainer h4 {
   position: absolute;
-  left: 31%;
-  bottom: 180px;
+  left: 37%;
+  bottom: 220px;
 }
 
 .visit .wrapper {
@@ -436,7 +439,7 @@ header .headerTextContainer h4 {
       flex-basis: 65%;
 }
 .visit .wrapper .visitTextContainer .buttonContainer {
-  margin: 30px auto;
+  margin: 40px auto;
 }
 .visit .wrapper .visitImgContainer img {
   box-shadow: -18px 17px 0px 0px #50E3C2;
@@ -451,6 +454,84 @@ header .headerTextContainer h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery .galleryContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin: 80px auto;
+}
+.gallery .galleryContainer ul li {
+  margin: 0 20px;
+}
+
+.mainNav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mainNav .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.mainNav .wrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mainNav .wrapper ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mainNav .wrapper ul li h3 {
+  margin-left: 10px;
+}
+
+.banner img {
+  width: 100vw;
+}
+
+.freeTrip .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 90px auto 120px auto;
+}
+.freeTrip .wrapper h2 {
+  margin-bottom: 0px;
+}
+.freeTrip .wrapper p {
+  margin: 1% 15% 3% 15%;
+}
+.freeTrip .wrapper .buttonContainer {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #2C2C2C;
+}
+footer p {
+  margin: 0 auto;
+  padding: 10px 0px;
+  text-align: center;
 }

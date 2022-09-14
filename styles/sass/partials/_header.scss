@@ -2,8 +2,9 @@
 
 header {
     background-image: url(../assets/home-image-1.jpg);
+    background-position: top center;
     background-size: cover;
-    height: 65vh;
+    height: 85vh;
     position: relative;
 
     .wrapper {
@@ -16,32 +17,31 @@ header {
             display: flex;
             
             li {
-                margin-left: 50px;
+            padding: 0 30px;
             }
         }
     }
+}
 
-    .headerImgContainer {
-            // position: relative;
-            img {
-                width: 43%;
-                max-width: 550px;
-                position: absolute;
-                top: 200px;
-            }
+.headerImgContainer {
+    // position: relative;
+
+        img {
+            position: absolute;
+            top: 250px;
+            max-width: 45%;
+            max-height: 700px;
+      }
+    }
+    .headerTextContainer {
+        h1 {
+            position: absolute;
+            left: 36%;
+            bottom: 120px;
         }
-        .headerTextContainer {
-            h1 {
-                position: absolute;
-                left: 30%;
-                // right: 100px;
-                bottom: 70px;
-            }
-            h4 {
-                position: absolute;
-                left: 31%;
-                bottom: 180px;
-            }
+        h4 {
+            position: absolute;
+            left: 37%;
+            bottom: 220px;
         }
     }
-

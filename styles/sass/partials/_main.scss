@@ -12,7 +12,7 @@
             flex-basis: 65%;
 
             .buttonContainer {
-                margin: 30px auto;
+                margin: 40px auto;
             }
         }
 
@@ -27,12 +27,79 @@
 } 
 
 // Section 2: GALLERY
-
 .gallery {
     background-color: $lightBlue;
 
     .galleryContainer {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        
+        ul {
+            display: flex;
+            padding-left: 0; 
+            margin: 80px auto;
+            li {
+                margin: 0 20px;
+            }
+        }
     }
 }
+
+// Section 3: MAIN NAV
+.mainNav {
+    .wrapper {
+        display: flex;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                flex-basis: 50%;
+                flex-wrap: wrap;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+
+                h3 {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+// NEED TO CHANGE SO THAT SVG IS ACTUALLY A VERTICAL THING ON ITS OWN AND THEN H3 AND THE P ALIGN INTO ONE CONTAINER. NEED TO MAKE MORE DIVS
+
+// Section 4: ARTICLES
+// for the articles section, can use position absolute or use the transform/translate thing from today 
+
+// Section 5: BANNER
+.banner {
+    img {
+        width: 100vw;
+    }
+}
+
+// Section 6: FREE TRIP
+.freeTrip {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 90px auto 120px auto;
+        h2 {
+            margin-bottom: 0px;
+        }
+        p {
+            margin: 1% 15% 3% 15%;
+        }
+        .buttonContainer {
+            margin-top: 10px;
+        }
+    }
+}
+
