@@ -47,10 +47,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
-  line-height: 58px;
-  letter-spacing: 3.8px;
-  color: $spruce;  
+    font-size: 1.75rem;
+    line-height: 58px;
+    letter-spacing: 3.8px;
+    color: $spruce;  
 }
 
 .articles h2 {
@@ -89,14 +89,14 @@ p {
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: $iceBlue;
-  cursor: pointer;
-  transition: 0.3s;
+    text-decoration: none;
+    color: $iceBlue;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 svg {
