@@ -380,7 +380,7 @@ header {
   background-image: url(../assets/home-image-1.jpg);
   background-position: top center;
   background-size: cover;
-  height: 85vh;
+  min-height: 78vh;
   position: relative;
 }
 header .wrapper {
@@ -416,9 +416,9 @@ header .wrapper .headerMenu li {
 
 .headerImgContainer img {
   position: absolute;
-  top: 250px;
+  bottom: -125px;
   max-width: 45%;
-  max-height: 700px;
+  max-height: 600px;
 }
 
 .headerTextContainer h1 {
@@ -430,6 +430,14 @@ header .wrapper .headerMenu li {
   position: absolute;
   left: 37%;
   bottom: 220px;
+}
+
+.blog {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 45vh;
+  position: relative;
 }
 
 .visit .wrapper {
