@@ -110,3 +110,13 @@ svg {
 footer p {
     color: $iceBlue;
 }
+
+
+.blog h1, .contact h1 {
+    font-family: $bodyFont;
+    color: $iceBlue;
+    font-size: 4.35rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.45rem;
+    padding-top: 50px;
+}

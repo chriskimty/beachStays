@@ -329,6 +329,15 @@ footer p {
   color: #FAFFFE;
 }
 
+.blog h1, .contact h1 {
+  font-family: "Lato";
+  color: #FAFFFE;
+  font-size: 4.35rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.45rem;
+  padding-top: 50px;
+}
+
 .wrapper {
   max-width: 1440px;
   width: 85%;
@@ -411,7 +420,7 @@ header .wrapper .headerMenu {
   display: flex;
 }
 header .wrapper .headerMenu li {
-  padding: 0 30px;
+  padding: 0 0 0 50px;
 }
 
 .headerImgContainer img {
@@ -436,8 +445,14 @@ header .wrapper .headerMenu li {
   background-image: url(../assets/blog-image-1.jpg);
   background-position: top center;
   background-size: cover;
-  height: 45vh;
-  position: relative;
+  min-height: 50vh;
+}
+
+.contact {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-position: top center;
+  background-size: cover;
+  min-height: 50vh;
 }
 
 .visit .wrapper {
