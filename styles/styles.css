@@ -651,3 +651,197 @@ footer p {
   padding: 10px 0px;
   text-align: center;
 }
+
+.contactMain {
+  background-color: #FAFFFE;
+  min-height: 50vh;
+}
+.contactMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactForm {
+  background-color: #FAFFFE;
+  padding: 60px 60px 0px 60px;
+  margin: 0px;
+  text-align: center;
+  -webkit-transform: translate(0px, -110px);
+          transform: translate(0px, -110px);
+  -webkit-box-shadow: 20px 20px 0px -4px #50E3C2;
+          box-shadow: 20px 20px 0px -4px #50E3C2;
+}
+.contactForm .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactForm .nameEmail input[type=text], .contactForm .nameEmail input[type=email] {
+  height: 50px;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  padding: 30px 25px;
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .nameEmail input[type=text]::-webkit-input-placeholder, .contactForm .nameEmail input[type=email]::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .nameEmail input[type=text]::-moz-placeholder, .contactForm .nameEmail input[type=email]::-moz-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .nameEmail input[type=text]:-ms-input-placeholder, .contactForm .nameEmail input[type=email]:-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .nameEmail input[type=text]::-ms-input-placeholder, .contactForm .nameEmail input[type=email]::-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .nameEmail input[type=text]::placeholder, .contactForm .nameEmail input[type=email]::placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .nameEmail input[type=text]:focus, .contactForm .nameEmail input[type=email]:focus {
+  outline: none;
+}
+.contactForm .nameEmail input[type=text] {
+  margin-right: 10px;
+}
+.contactForm .nameEmail input[type=email] {
+  margin-left: 10px;
+}
+.contactForm .message textarea {
+  resize: none;
+  border: none;
+  border: 2px solid #50E3C2;
+  padding: 30px 25px;
+  margin-top: 50px;
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .message textarea::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .message textarea::-moz-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .message textarea:-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .message textarea::-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .message textarea::placeholder {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.contactForm .message textarea:focus {
+  outline: none;
+}
+.contactForm button {
+  color: #FAFFFE;
+  background-color: #063974;
+  padding: 8px 0;
+  margin: 50px 0;
+  border: 2px solid #063974;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactForm button:hover {
+  background-color: #FAFFFE;
+  color: #063974;
+}
+.contactForm button:focus {
+  background-color: #FAFFFE;
+  color: #063974;
+}
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 90px 0 20px 0;
+}
+.contactInfo .email p {
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 0px;
+}
+.contactInfo .email p:hover {
+  color: #50E3C2;
+}
+.contactInfo .email p:focus {
+  color: #50E3C2;
+}
+.contactInfo .contactText p {
+  margin: 0px;
+}
+
+.socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.socialMedia ul li {
+  padding-right: 20px;
+}
+.socialMedia ul li a {
+  color: #2C2C2C;
+}
+.socialMedia ul li a:hover {
+  color: #50E3C2;
+}
+.socialMedia ul li a:focus {
+  color: #50E3C2;
+}

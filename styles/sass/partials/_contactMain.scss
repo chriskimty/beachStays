@@ -1,0 +1,141 @@
+@use "variables" as *;
+
+.contactMain {
+    background-color: $iceBlue;
+    min-height: 50vh;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contactForm {
+    background-color: $iceBlue;
+    padding: 60px 60px 0px 60px;
+    margin: 0px;
+    text-align: center;
+    transform: translate(0px, -110px);
+    box-shadow: 20px 20px 0px -4px $cyan;
+    .nameEmail {
+        display: flex;
+        justify-content: space-between;
+   
+        input[type="text"], input[type="email"] {
+            height: 50px;
+            width: 50%;
+            border: none;
+            border-bottom: 2px solid $cyan;
+            padding: 30px 25px;
+            font-family: $bodyFont;
+            font-size: 1rem;
+            line-height: 32px;
+            letter-spacing: 2px;
+                &::placeholder {
+                    font-family: $bodyFont;
+                    font-size: 1rem;
+                    line-height: 32px;
+                    letter-spacing: 2px;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input[type="text"] {
+                margin-right: 10px;
+            }
+            input[type="email"] {
+                margin-left: 10px;
+            }
+        }
+
+        .message {
+            textarea {
+                resize: none;
+                border: none;
+                border: 2px solid $cyan;
+                padding: 30px 25px;
+                margin-top: 50px;
+                font-family: $bodyFont;
+                font-size: 1rem;
+                line-height: 32px;
+                letter-spacing: 2px;
+
+                &::placeholder {
+                    font-family: $bodyFont;
+                    font-size: 1rem;
+                    line-height: 32px;
+                    letter-spacing: 2px;
+                }
+                 &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+    button {
+        color: $iceBlue;
+        background-color: $twilight;
+        padding: 8px 0;
+        margin: 50px 0;
+        border: 2px solid $twilight;
+        font-size: 1rem;
+        line-height: 32px;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: $iceBlue;
+            color: $twilight;
+        }
+        &:focus {
+            background-color: $iceBlue;
+            color: $twilight;
+        }
+    }
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0 20px 0;
+    .email {
+        p {
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 0px;
+            &:hover {
+                color: $cyan;
+            }
+            &:focus {
+                color: $cyan;
+            }
+        }
+    }    
+    .contactText {
+        p {
+            margin: 0px;
+        }
+    }    
+}
+
+.socialMedia {
+    ul {
+        display: flex;
+        padding: 0;
+        li {
+            padding-right: 20px;
+            a {
+            color: $black;
+                &:hover {
+                    color: $cyan;
+                }
+                &:focus {
+                    color: $cyan;
+                }
+            }
+        }
+    }
+}
