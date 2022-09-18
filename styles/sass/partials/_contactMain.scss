@@ -2,19 +2,20 @@
 
 .contactMain {
     background-color: $iceBlue;
-    min-height: 50vh;
+ 
     .wrapper {
         display: flex;
         justify-content: space-between;
+        transform: translate(0px, -110px);
+        width: 90%;
     }
 }
 
-.contactForm {
+.fillForm {
     background-color: $iceBlue;
     padding: 60px 60px 0px 60px;
     margin: 0px;
     text-align: center;
-    transform: translate(0px, -110px);
     box-shadow: 20px 20px 0px -4px $cyan;
     .nameEmail {
         display: flex;
@@ -100,7 +101,9 @@
 .contactInfo{
     display: flex;
     flex-direction: column;
-    padding: 90px 0 20px 0;
+    padding: 60px 0 20px 0;
+    margin-top: 150px;
+    margin-left: 50px;
     .email {
         p {
             font-weight: bold;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -329,12 +330,15 @@ footer p {
   color: #FAFFFE;
 }
 
-.blog h1, .contact h1 {
+.blogMain h1, .contact h1 {
   font-family: "Lato";
   color: #FAFFFE;
   font-size: 4.35rem;
   line-height: 2.9rem;
   letter-spacing: 0.45rem;
+}
+
+.blogMain h1 {
   padding-top: 50px;
 }
 
@@ -651,10 +655,146 @@ footer p {
   padding: 10px 0px;
   text-align: center;
 }
+footer p span {
+  font-size: 0.6rem;
+}
+
+.blogMain .blogContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogMain .blogContent article {
+  width: 60%;
+  -webkit-transform: translate(0px, -320px);
+          transform: translate(0px, -320px);
+  margin-bottom: -300px;
+}
+.blogMain .blogContent article .articleImg {
+  margin-right: 16px;
+}
+.blogMain .blogContent article .articleImg img {
+  -webkit-box-shadow: 23px 23px 0px -7px #50E3C2;
+          box-shadow: 23px 23px 0px -7px #50E3C2;
+}
+.blogMain .blogContent article .border {
+  border-right: 5px solid #50E3C2;
+  border-bottom: 5px solid #50E3C2;
+}
+.blogMain .blogContent article .border .articleText {
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.blogMain .blogContent article .border .articleText h2 {
+  line-height: 15px;
+}
+.blogMain .blogContent article .border .articleText h3 {
+  font-size: 1rem;
+  color: #063974;
+  font-style: italic;
+  font-weight: normal;
+}
+.blogMain .blogContent article .border .articleText h3 span {
+  font-weight: bold;
+}
+.blogMain .blogContent aside {
+  width: 40%;
+  padding-left: 7%;
+  padding-top: 7%;
+  max-width: 450px;
+}
+.blogMain .blogContent aside h3 {
+  color: #063974;
+}
+.blogMain .blogContent aside .ourMission a {
+  color: #0c5f4c;
+  font-weight: bold;
+}
+.blogMain .blogContent aside .ourMission a:hover {
+  color: #50E3C2;
+}
+.blogMain .blogContent aside .ourMission a:focus {
+  color: #50E3C2;
+}
+.blogMain .blogContent aside .recentPosts h3 {
+  margin-bottom: 15px;
+}
+.blogMain .blogContent aside .recentPosts ul {
+  padding-left: 20px;
+}
+.blogMain .blogContent aside .recentPosts ul a {
+  color: #2C2C2C;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.blogMain .blogContent aside .recentPosts ul a::before {
+  content: "•";
+  color: #50E3C2;
+}
+.blogMain .blogContent aside .recentPosts ul a:hover {
+  color: #50E3C2;
+}
+.blogMain .blogContent aside .recentPosts ul a:focus {
+  color: #50E3C2;
+}
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.comments .commentSection {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.comments .commentSection h2 {
+  color: #2C2C2C;
+  letter-spacing: 2px;
+}
+.comments .commentSection .commentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0px;
+}
+.comments .commentSection .commentBox .commentImgContainer {
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
+}
+.comments .commentSection .commentBox .commentImgContainer img {
+  width: 94px;
+}
+.comments .commentSection .commentBox .commentTextContainer {
+  -ms-flex-preferred-size: 83%;
+      flex-basis: 83%;
+}
+.comments .commentSection .commentBox .commentTextContainer h3 {
+  font-size: 1rem;
+  color: #063974;
+  margin: 0px;
+}
+.comments .commentSection .secondComment {
+  margin-top: 70px;
+}
+.comments .fillForm {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  margin-bottom: 70px;
+}
 
 .contactMain {
   background-color: #FAFFFE;
-  min-height: 50vh;
 }
 .contactMain .wrapper {
   display: -webkit-box;
@@ -663,19 +803,20 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transform: translate(0px, -110px);
+          transform: translate(0px, -110px);
+  width: 90%;
 }
 
-.contactForm {
+.fillForm {
   background-color: #FAFFFE;
   padding: 60px 60px 0px 60px;
   margin: 0px;
   text-align: center;
-  -webkit-transform: translate(0px, -110px);
-          transform: translate(0px, -110px);
   -webkit-box-shadow: 20px 20px 0px -4px #50E3C2;
           box-shadow: 20px 20px 0px -4px #50E3C2;
 }
-.contactForm .nameEmail {
+.fillForm .nameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,7 +824,7 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contactForm .nameEmail input[type=text], .contactForm .nameEmail input[type=email] {
+.fillForm .nameEmail input[type=text], .fillForm .nameEmail input[type=email] {
   height: 50px;
   width: 50%;
   border: none;
@@ -694,46 +835,46 @@ footer p {
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .nameEmail input[type=text]::-webkit-input-placeholder, .contactForm .nameEmail input[type=email]::-webkit-input-placeholder {
+.fillForm .nameEmail input[type=text]::-webkit-input-placeholder, .fillForm .nameEmail input[type=email]::-webkit-input-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .nameEmail input[type=text]::-moz-placeholder, .contactForm .nameEmail input[type=email]::-moz-placeholder {
+.fillForm .nameEmail input[type=text]::-moz-placeholder, .fillForm .nameEmail input[type=email]::-moz-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .nameEmail input[type=text]:-ms-input-placeholder, .contactForm .nameEmail input[type=email]:-ms-input-placeholder {
+.fillForm .nameEmail input[type=text]:-ms-input-placeholder, .fillForm .nameEmail input[type=email]:-ms-input-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .nameEmail input[type=text]::-ms-input-placeholder, .contactForm .nameEmail input[type=email]::-ms-input-placeholder {
+.fillForm .nameEmail input[type=text]::-ms-input-placeholder, .fillForm .nameEmail input[type=email]::-ms-input-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .nameEmail input[type=text]::placeholder, .contactForm .nameEmail input[type=email]::placeholder {
+.fillForm .nameEmail input[type=text]::placeholder, .fillForm .nameEmail input[type=email]::placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .nameEmail input[type=text]:focus, .contactForm .nameEmail input[type=email]:focus {
+.fillForm .nameEmail input[type=text]:focus, .fillForm .nameEmail input[type=email]:focus {
   outline: none;
 }
-.contactForm .nameEmail input[type=text] {
+.fillForm .nameEmail input[type=text] {
   margin-right: 10px;
 }
-.contactForm .nameEmail input[type=email] {
+.fillForm .nameEmail input[type=email] {
   margin-left: 10px;
 }
-.contactForm .message textarea {
+.fillForm .message textarea {
   resize: none;
   border: none;
   border: 2px solid #50E3C2;
@@ -744,40 +885,40 @@ footer p {
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .message textarea::-webkit-input-placeholder {
+.fillForm .message textarea::-webkit-input-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .message textarea::-moz-placeholder {
+.fillForm .message textarea::-moz-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .message textarea:-ms-input-placeholder {
+.fillForm .message textarea:-ms-input-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .message textarea::-ms-input-placeholder {
+.fillForm .message textarea::-ms-input-placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .message textarea::placeholder {
+.fillForm .message textarea::placeholder {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
 }
-.contactForm .message textarea:focus {
+.fillForm .message textarea:focus {
   outline: none;
 }
-.contactForm button {
+.fillForm button {
   color: #FAFFFE;
   background-color: #063974;
   padding: 8px 0;
@@ -792,11 +933,11 @@ footer p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.contactForm button:hover {
+.fillForm button:hover {
   background-color: #FAFFFE;
   color: #063974;
 }
-.contactForm button:focus {
+.fillForm button:focus {
   background-color: #FAFFFE;
   color: #063974;
 }
@@ -809,7 +950,9 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 90px 0 20px 0;
+  padding: 60px 0 20px 0;
+  margin-top: 150px;
+  margin-left: 50px;
 }
 .contactInfo .email p {
   font-weight: bold;
