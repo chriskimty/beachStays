@@ -1,0 +1,187 @@
+@use "variables" as *;
+
+//DESKTOP 1200px
+@media (max-width: 1200px) {
+    .homeHeader {
+        min-height: 60vh;
+         .headerTextContainer {
+            h1 {
+                left: 20%;
+                bottom: 100px;
+            }
+            h4 {
+                left: 21%;
+                bottom: 200px;
+            }
+        }
+    }
+    .visitTextContainer {
+        p {
+            margin-right: 50px;
+        }
+    }
+}
+
+// LAPTOP 992px //
+@media (max-width: 992px) {
+    .homeHeader, .homeMain {
+        .wrapper {
+            width: 90%;
+        }
+    }
+    .homeHeader {
+        min-height: 48vh;
+        .headerImgContainer {
+            display: none;
+        }
+        .headerTextContainer {
+            padding-top: 13%;
+            h1, h4 {
+                position: static;
+                margin: 0 auto;
+                text-align: center;
+            }
+            h1 {
+                font-size: clamp(5rem, 6vw, 5.56rem);
+            }
+        }
+    }
+    .homeMain {
+        .visit {
+            .wrapper {
+                margin: 0 auto;
+            }
+        }
+        .gallery {
+            .galleryContainer {
+                ul {
+                    margin: 25px auto;
+                }
+            }
+        }
+        .mainNav {
+            margin: 30px auto;
+            .wrapper {
+                ul {
+                    padding-left: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+// TABLET 768px
+@media (max-width: 768px) {
+    .homeHeader {
+        .headerTextContainer {
+            h1 {
+                font-size: 13vw;
+            }
+            h4 {
+                font-size: 8.1vw;
+            }
+        }
+    }
+
+    .homeMain {
+        .visit {
+            margin-bottom: -120px;
+            .wrapper {
+                flex-direction: column-reverse;
+                align-items: flex-end;
+                
+                .visitImgContainer {
+                    transform: translate(0px, -125px);
+                }
+                .visitTextContainer {
+                    transform: translate(0px, -145px);
+                    p {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+        .gallery {
+            background-color: $iceBlue;
+            .wrapper {
+                width: 100%;
+            }
+            .galleryContainer {
+                .image3 {
+                    display: none;
+                }
+                ul {
+                    margin: 0px auto;
+                    li {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .mainNav {
+           margin-bottom: -50px;
+            .wrapper {
+                 
+                ul {
+                    li {
+                        width: auto;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .articles {
+            .planAhead, .newLocations {
+                flex-wrap: wrap;
+                flex-direction: row;
+                .articleImgContainer {
+                    width: auto;
+                    position: static;
+                    img {
+                        position: static;
+                    }
+                }
+                .articleTextContainer {
+                    width: 100%;
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+            }
+            .newLocations {
+                .articleImgContainer {
+                    img {
+                        box-shadow: 32px 32px 0px -13px $cyan;
+                    }
+                }
+            }
+        }
+
+        .freeTrip {
+            .wrapper {
+                margin: 20px auto 60px auto;
+                p {
+                    margin: 1% 2% 5% 2%;
+                }
+            }
+        }
+    }
+}
+
+// MOBILE 480px
+@media (max-width: 480px) {
+    .homeHeader {
+        min-height: 40vh;
+        .headerTextContainer {
+            h1 {
+                font-size: 2.9rem;
+            }
+            h4 {
+                font-size: 1.95rem;
+            }
+        }
+    }
+}

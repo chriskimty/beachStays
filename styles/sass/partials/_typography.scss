@@ -112,7 +112,7 @@ footer p {
 }
 
 
-.blogMain h1, .contact h1 {
+.blog h1, .contact h1 {
     font-family: $bodyFont;
     color: $iceBlue;
     font-size: 4.35rem;
@@ -120,6 +120,6 @@ footer p {
     letter-spacing: 0.45rem;
 }
 
-.blogMain h1 {
+.blog h1, .contact h1 {
     padding-top: 50px;
 }

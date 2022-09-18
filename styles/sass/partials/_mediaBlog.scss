@@ -1,0 +1,119 @@
+@use "variables" as *;
+
+// LARGE DESKTOP 1670px+ to fix extended border //
+@media (min-width: 1542px){
+    .blogMain {
+        .blogContent {
+            article {
+                img {
+                    width: 125%;
+                }
+            }
+            aside {
+                max-width: 600px;
+                padding-left: 9%;
+                img {
+                    width: 125%;
+                }
+            }
+        }
+    }
+}
+
+// DESKTOP 1200px //
+@media (max-width: 1200px) {
+    .comments {
+        display: block;
+        .fillForm {
+                width: 100%;
+            }
+    }
+}
+    
+// LAPTOP 992px //
+@media (max-width: 992px) {
+    .blog {
+        min-height: 30vh;
+    }
+
+    .blogMain {
+        .blogContent {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            article {
+                width: 95%;
+                transform: translate(0px, 0px);
+                margin-bottom: 0px;
+            }
+            aside {
+                display: flex;
+                width: 100%;
+                max-width: 920px;
+                margin-bottom: 50px;
+                img {
+                    min-width: 35vw;
+                    box-shadow: 14px 15px 0px 0px $cyan;
+                }
+                .asideTextGroup {
+                    margin: 0px 19px 0px 50px;
+                    h3 {
+                    margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SMALLER SCREEN 670PX and below //
+@media (max-width: 670px) {
+    .blogMain {
+        .blogContent {
+            article {
+                width: 100%;
+                .border {
+                    .articleText {
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        h2 {
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+            aside {
+                margin-bottom: 15px;
+                .asideTextGroup {
+                    margin: 0px auto;
+                }
+                .asideImg {
+                    display: none;
+                }
+            }
+        }
+        .articleText p, .commentTextContainer p {
+                    font-size: 0.85rem;
+                    line-height: 25px;
+                    letter-spacing: 1.8px;
+            }
+
+        .comments {
+            .commentBox {
+                .commentImgContainer {
+                    flex-basis: 25%;
+                }
+            }
+            .secondComment {
+                margin-top: 30px;
+            }
+            .nameEmail {
+                flex-wrap: wrap;
+                input[type="text"], input[type="email"] {
+                    width: 100%;
+                    margin: 0px auto;
+                }
+            }
+
+        }
+    }
+}

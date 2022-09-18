@@ -1,0 +1,45 @@
+@use "variables" as *;
+
+// DESKTOP 1200px
+// @media (max-width: 1200px) {
+// }
+
+// LAPTOP 992px //
+@media (max-width: 992px) {
+// HEADER NAV + HAMBURGER MENU
+    header {
+        .wrapper {
+            .headerMenu {
+               display: none;  
+            }  
+            .hamburger {
+                display: block;
+                svg {
+                    transition: 0.2s;
+                    &:hover {
+                        color: $cyan;
+                    }
+                    &:focus {
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// TABLET 768px
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 1080px;
+        width: 90%;
+    }
+}
+
+// MOBILE 480px
+@media (max-width: 480px) {
+    .wrapper {
+        max-width: 768px;
+        width: 95%;
+    }
+}

@@ -5,9 +5,9 @@
         display: flex;
         justify-content: space-between;
         article {
-            width: 60%;
-            transform: translate(0px, -320px);
-            margin-bottom: -300px;
+            width: 65%;
+            transform: translate(0px, -135px);
+            margin-bottom: -120px;
             
             .articleImg {
                 margin-right: 16px;
@@ -22,7 +22,6 @@
                     padding-left: 50px;
                     padding-top: 50px;
                     padding-bottom: 30px;
-                    // margin-bottom: -300px;
                     h2 {
                         line-height: 15px;
                     }
@@ -57,6 +56,9 @@
                     &:focus {
                     color: $cyan;
                     }
+                }
+                 p {
+                    margin-right: 5px;
                 }
             }
             .recentPosts {

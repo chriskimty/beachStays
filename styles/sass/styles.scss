@@ -13,4 +13,10 @@
 @use "partials/blogMain";
 @use "partials/contactMain";
 
+// MEDIA QUERIES
+@use "partials/mediaAll";
+@use "partials/mediaHome";
+@use "partials/mediaBlog";
+@use "partials/mediaContact";
+
 

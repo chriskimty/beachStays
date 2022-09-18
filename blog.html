@@ -8,6 +8,8 @@
     <title>🌊 Blog | Beachstays</title>
     <!-- LINK TO STYLESHEET -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- FONTAWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/542d40d4ae.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,17 +23,29 @@
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12" id="id_107"></line>
+                            <line x1="3" y1="6" x2="21" y2="6" id="id_108"></line>
+                            <line x1="3" y1="18" x2="21" y2="18" id="id_109"></line>
+                        </svg>
+                    </a>
+                </div><!-- .hamburger ends -->
             </div> <!-- .wrapper ends -->
         </nav>
+        <div class="heading wrapper">
+            <h1>Blog</h1>
+        </div> <!--  .wrapper ends -->
     </header>
 
     <!-- *MAY HAVE TO ADD SOME WRAPPERS FROM HERE AND THERE  -->
     <main class="blogMain">
         <section class="blogContent">
             <article>
-                <div class="heading wrapper">
-                    <h1>Blog</h1>
-                </div> <!--  .wrapper ends -->
+
                 <div class="articleImg">
                     <img src="./assets/post-image.jpg" alt="summer house at dusk with a garden of reed grass">
                 </div><!-- .articleImg ends -->
@@ -64,39 +78,41 @@
                 <div class="asideImg">
                     <img src="./assets/sidebar-image.jpg" alt="view of beach house with a dock on a river">
                 </div>
-                <div class="ourMission">
-                    <h3>Our Mission</h3>
-                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. </br>
-                        <a href="#">
-                            Find out more.
-                        </a>
-                    </p>
-                </div><!-- .ourMission ends -->
-                <div class="recentPosts">
-                    <h3>Recent Posts</h3>
-                    <ul>
-                        <li>
+                <div class="asideTextGroup">
+                    <div class="ourMission">
+                        <h3>Our Mission</h3>
+                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. </br>
                             <a href="#">
-                                Donec facilis tortor ut
+                                Find out more.
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Augue lacinia at viverra
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Semper sed sapien metus
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Scelerisque nec pharetra
-                            </a>
-                        </li>
-                    </ul>
-                </div><!-- .recentPosts ends -->
+                        </p>
+                    </div><!-- .ourMission ends -->
+                    <div class="recentPosts">
+                        <h3>Recent Posts</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Donec facilis tortor ut
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Augue lacinia at viverra
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Semper sed sapien metus
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Scelerisque nec pharetra
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- .recentPosts ends -->
+                </div><!-- .asideTextGroup ends -->
             </aside>
         </section> <!-- .blogContent ends -->
 
@@ -150,9 +166,7 @@
     </main>
     <footer>
         <div class="wrapper">
-            <p>Copyright &copy; 2019 HackerYou
-                <span> | Recreated by Chris Kim @Juno College 2022</span>
-            </p>
+            <p>Copyright &copy; 2019 HackerYou</p>
         </div><!-- .wrapper ends -->
     </footer>
 </body>

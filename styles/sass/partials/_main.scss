@@ -81,7 +81,6 @@
     }
 }
 // Section 4: ARTICLES
-// for the articles section, can use position absolute or use the transform/translate thing from today 
 .articles {
     display: flex;
     flex-wrap: wrap;
@@ -98,11 +97,8 @@
                 max-width: 85%;
                 position: absolute;
                 left: 0;
-                bottom: 50px;
-                
+                bottom: 50px;         
                 box-shadow: 32px 32px 0px -13px $cyan;
-                -webkit-box-shadow: 32px 32px 0px -13px $cyan;
-                -moz-box-shadow: 32px 32px 0px -13px $cyan;
             }
         }
         .articleTextContainer {
@@ -132,8 +128,6 @@
                 top: 40px;
                 right: 0;
                 box-shadow: -29px 29px 0px -10px $cyan;
-                -webkit-box-shadow: -29px 29px 0px -10px $cyan;
-                -moz-box-shadow: -29px 29px 0px -10px $cyan;
             }
         }
 

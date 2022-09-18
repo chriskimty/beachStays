@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌊 Beachstays</title>
-
+    <!-- LINK TO STYLESHEET -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- FONTAWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/542d40d4ae.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="homeHeader">
         <nav class="navBar">
             <div class="wrapper">
                 <a class="logo" href="index.html">Beachstays</a>
@@ -22,8 +24,18 @@
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-            </div>
-            <!--.wrapper ends -->
+                <div class="hamburger">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12" id="id_107"></line>
+                            <line x1="3" y1="6" x2="21" y2="6" id="id_108"></line>
+                            <line x1="3" y1="18" x2="21" y2="18" id="id_109"></line>
+                        </svg>
+                    </a>
+                </div><!-- .hamburger ends -->
+            </div><!-- .wrapper ends -->
         </nav>
         <div class="headerImgContainer">
             <img src="./assets/header-box.jpg" alt="black-rimmed polarized sunglasses on a beach">
@@ -35,7 +47,7 @@
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="homeMain">
         <!-- Section 1: VISIT -->
         <section class="visit">
             <div class="wrapper">
@@ -65,7 +77,8 @@
                     <ul>
                         <li><img src="./assets/gallery-image1.jpg" alt="view of beach house with a dock"></li>
                         <li><img src="./assets/gallery-image2.jpg" alt="summer house at dusk"></li>
-                        <li><img src="./assets/gallery-image3.jpg" alt="three-storey beach house with palm trees "></li>
+                        <li class="image3"><img src="./assets/gallery-image3.jpg"
+                                alt="three-storey beach house with palm trees "></li>
                     </ul>
                 </div><!-- .galleryContainer ends -->
             </div><!-- .wrapper ends -->
@@ -207,9 +220,7 @@
 
     <footer>
         <div class="wrapper">
-            <p>Copyright &copy; 2019 HackerYou
-                <span> | Recreated by Chris Kim @Juno College 2022</span>
-            </p>
+            <p>Copyright &copy; 2019 HackerYou</p>
         </div><!-- .wrapper ends -->
     </footer>
 </body>

@@ -1,0 +1,85 @@
+@use "variables" as *;
+
+// DESKTOP 1200px
+@media (max-width: 1200px) {
+    .fillForm {
+        width: 65%;
+    }
+}
+
+// LAPTOP 992px //
+@media (max-width: 992px) {
+    .contactMain {
+        .wrapper {
+            justify-content: space-around;
+            .fillForm {
+                .nameEmail {
+                    flex-wrap: wrap;
+                    input[type="text"], input[type="email"] {
+                        width: 100%;
+                        margin: 0px auto;
+                    }
+                }
+                .message {
+                    textarea {
+                        margin-top: 20px;
+                        padding: 15px 25px;
+                    }
+                }
+                button {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+// TABLET 768px
+@media (max-width: 768px) {
+    .contact {
+        h1 {
+            line-height: 4.35rem;
+            width: 100%;
+            text-align: center;
+            font-size: clamp(4rem, 5vw, 4.35rem);
+            padding-bottom: 50px;
+        }
+    }
+
+    .contactMain {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            .fillForm {
+                width: 100%;
+                padding: 30px 30px 0px 30px;
+                .message {
+                    textarea {
+                        margin-top: 40px;
+                        padding: 25px 25px;
+                    }
+                }
+                button {
+                    margin: 40px 0;
+                }
+            }
+        }
+        .contactInfo {
+            margin: 0px auto;
+            padding: 40px 0 0 0;
+            text-align: center;
+            .socialMedia {
+                ul {
+                    justify-content: space-evenly;
+                    .fa-brands {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+            .email p, .contactText p {
+                font-size: 1.4rem;
+                line-height: 45px;
+            }
+        }
+    }
+}
