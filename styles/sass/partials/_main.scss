@@ -7,20 +7,15 @@
         justify-content: space-between;
         align-items: center;
         margin: 150px auto 100px auto;
-
         .visitTextContainer {
             flex-basis: 65%;
-
             .buttonContainer {
                 margin: 40px auto;
             }
         }
-
         .visitImgContainer {
             img {
                 box-shadow: -18px 17px 0px 0px $cyan;
-                -webkit-box-shadow: -18px 17px 0px 0px $cyan;
-                -moz-box-shadow: -18px 17px 0px 0px $cyan;
             }
         }
     }   
@@ -29,11 +24,9 @@
 // Section 2: GALLERY
 .gallery {
     background-color: $lightBlue;
-
     .galleryContainer {
         display: flex;
-        justify-content: center;
-        
+        justify-content: center;      
         ul {
             display: flex;
             padding-left: 0; 
@@ -50,21 +43,17 @@
     margin: 80px auto;
     .wrapper {
         display: flex;
-
         ul {
             display: flex;
             flex-wrap: wrap;
-
             li {
                 display: flex;
                 justify-content: baseline;
                 width: calc(50% - 17px);
                 margin: 15px 17px 15px 0px;
-
                 .mainNavIcon {
                     margin-right: 15px;
                 }
-
                 h3 {
                     margin: 0px;
                     display: inline-block;
@@ -80,16 +69,15 @@
         }
     }
 }
+
 // Section 4: ARTICLES
 .articles {
     display: flex;
     flex-wrap: wrap;
     margin: 50px 0px 0 0;
     background-color: $lightBlue;
-
     .planAhead {
         display: flex;
-
         .articleImgContainer {
             width: 50%;
             position: relative;
@@ -112,16 +100,13 @@
                 margin-top: 8%;
             }
         }
-    }
-   
+    }  
     .newLocations {
         display: flex;
         flex-direction: row-reverse;
-
         .articleImgContainer {
             width: 50%;
-            position: relative;
-            
+            position: relative;        
             img {
                 max-width: 85%;
                 position: absolute;
@@ -130,7 +115,6 @@
                 box-shadow: -29px 29px 0px -10px $cyan;
             }
         }
-
         .articleTextContainer {
             width: 50%;
             text-align: right;

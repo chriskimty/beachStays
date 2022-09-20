@@ -486,9 +486,8 @@ header .wrapper .headerMenu li {
   margin: 40px auto;
 }
 .visit .wrapper .visitImgContainer img {
-  box-shadow: -18px 17px 0px 0px #50E3C2;
   -webkit-box-shadow: -18px 17px 0px 0px #50E3C2;
-  -moz-box-shadow: -18px 17px 0px 0px #50E3C2;
+          box-shadow: -18px 17px 0px 0px #50E3C2;
 }
 
 .gallery {
@@ -1080,31 +1079,22 @@ footer p span {
   }
 }
 @media (max-width: 768px) {
+  .homeHeader {
+    min-height: 45vh;
+  }
   .homeHeader .headerTextContainer h1 {
     font-size: 13vw;
   }
   .homeHeader .headerTextContainer h4 {
     font-size: 8.1vw;
   }
-  .homeMain .visit {
-    margin-bottom: -120px;
-  }
-  .homeMain .visit .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
   .homeMain .visit .wrapper .visitImgContainer {
-    -webkit-transform: translate(0px, -125px);
-            transform: translate(0px, -125px);
+    display: none;
   }
   .homeMain .visit .wrapper .visitTextContainer {
-    -webkit-transform: translate(0px, -145px);
-            transform: translate(0px, -145px);
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
   }
   .homeMain .visit .wrapper .visitTextContainer p {
     margin-right: 0px;
@@ -1167,10 +1157,16 @@ footer p span {
     min-height: 40vh;
   }
   .homeHeader .headerTextContainer h1 {
-    font-size: 2.9rem;
+    font-size: clamp(2.25rem, 2vw, 2.5rem);
   }
   .homeHeader .headerTextContainer h4 {
     font-size: 1.95rem;
+  }
+  .homeMain {
+    font-size: 90%;
+  }
+  .homeMain .articles .articleTextContainer {
+    text-align: center !important;
   }
 }
 @media (min-width: 1542px) {

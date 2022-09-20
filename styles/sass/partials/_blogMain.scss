@@ -8,7 +8,6 @@
             width: 65%;
             transform: translate(0px, -135px);
             margin-bottom: -120px;
-            
             .articleImg {
                 margin-right: 16px;
                 img {
@@ -35,9 +34,8 @@
                         }
                     }
                 }
-             } 
+            } 
         }
-
         aside {
             width: 40%;
             padding-left: 7%;
@@ -92,7 +90,6 @@
 .comments {
     display: flex;
     flex-wrap: wrap;
-
     .commentSection {
         flex-basis: 60%;
         h2 {
@@ -117,12 +114,10 @@
                 }
             }
         }
-
         .secondComment {
             margin-top: 70px;
         }
     }
-
     .fillForm {
         box-shadow: none;
         padding: 0px;

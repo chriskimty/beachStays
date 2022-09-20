@@ -7,23 +7,19 @@ header {
     background-size: cover;
     min-height: 78vh;
     position: relative;
-
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         padding: 20px 0;
-
+        // WILL ADD A FUNCTIONAL JS HAMBURGER MENU IN THE FUTURE!
         .hamburger {
-            display: none;
-            
+            display: none;            
             svg {
                 background: transparent;
-                color: $iceBlue;
-                
+                color: $iceBlue;                
             }
         }
-
         .logo {
             transition: 0.3s;
             &:hover {
@@ -33,17 +29,14 @@ header {
             color: $iceBlue;
             }
         }
-
         .headerMenu {
-            display: flex;
-            
+            display: flex;  
             li {
             padding: 0 0 0 50px;
             }
         }
     }
 }
-
 .headerImgContainer {
         img {
             position: absolute;
@@ -52,31 +45,31 @@ header {
             max-height: 600px;
       }
     }
-    .headerTextContainer {
-        h1 {
-            position: absolute;
-            left: 34%;
-            bottom: 120px;
-        }
-        h4 {
-            position: absolute;
-            left: 35%;
-            bottom: 220px;
-        }
+.headerTextContainer {
+    h1 {
+        position: absolute;
+        left: 34%;
+        bottom: 120px;
     }
+    h4 {
+        position: absolute;
+        left: 35%;
+        bottom: 220px;
+    }
+}
 
-    // BLOG
-    .blog {
-        background-image: url(../assets/blog-image-1.jpg);
-        background-position: top center;
-        background-size: cover;
-        min-height: 50vh;
-    }
+// BLOG
+.blog {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-position: top center;
+    background-size: cover;
+    min-height: 50vh;
+}
 
-        // GET IN TOUCH/CONTACT
-    .contact {
-        background-image: url(../assets/contact-image-1.jpg);
-        background-position: top center;
-        background-size: cover;
-        min-height: 50vh;
-    }
+// GET IN TOUCH/CONTACT
+.contact {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-position: top center;
+    background-size: cover;
+    min-height: 50vh;
+}

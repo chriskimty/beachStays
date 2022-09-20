@@ -74,6 +74,7 @@
 // TABLET 768px
 @media (max-width: 768px) {
     .homeHeader {
+         min-height: 45vh;
         .headerTextContainer {
             h1 {
                 font-size: 13vw;
@@ -83,26 +84,21 @@
             }
         }
     }
-
     .homeMain {
         .visit {
-            margin-bottom: -120px;
             .wrapper {
-                flex-direction: column-reverse;
-                align-items: flex-end;
-                
                 .visitImgContainer {
-                    transform: translate(0px, -125px);
+                    display: none;
                 }
                 .visitTextContainer {
-                    transform: translate(0px, -145px);
+                    flex-basis: 100%;
+                    text-align: center;
                     p {
                         margin-right: 0px;
                     }
                 }
             }
         }
-
         .gallery {
             background-color: $iceBlue;
             .wrapper {
@@ -120,11 +116,9 @@
                 }
             }
         }
-
         .mainNav {
            margin-bottom: -50px;
             .wrapper {
-                 
                 ul {
                     li {
                         width: auto;
@@ -133,7 +127,6 @@
                 }
             }
         }
-
         .articles {
             .planAhead, .newLocations {
                 flex-wrap: wrap;
@@ -159,7 +152,6 @@
                 }
             }
         }
-
         .freeTrip {
             .wrapper {
                 margin: 20px auto 60px auto;
@@ -177,11 +169,19 @@
         min-height: 40vh;
         .headerTextContainer {
             h1 {
-                font-size: 2.9rem;
+                font-size: clamp(2.25rem, 2vw, 2.5rem);
             }
             h4 {
                 font-size: 1.95rem;
             }
         }
+    }
+    .homeMain {
+        font-size: 90%;
+       .articles {
+        .articleTextContainer {
+        text-align:center !important;
+            } 
+        } 
     }
 }

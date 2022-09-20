@@ -1,12 +1,9 @@
 @use "variables" as *;
 
-// DESKTOP 1200px
-// @media (max-width: 1200px) {
-// }
-
 // LAPTOP 992px //
 @media (max-width: 992px) {
 // HEADER NAV + HAMBURGER MENU
+// WILL ADD A FUNCTIONAL JS HAMBURGER MENU IN THE FUTURE!
     header {
         .wrapper {
             .headerMenu {

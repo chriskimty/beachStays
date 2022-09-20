@@ -1,6 +1,7 @@
 @use "variables" as *;
 
-// LARGE DESKTOP 1670px+ to fix extended border //
+// LARGE DESKTOP 1542px+ to fix extended border //
+// not sure if it's best practice to have a min-width media query along with max-width...
 @media (min-width: 1542px){
     .blogMain {
         .blogContent {
@@ -25,8 +26,8 @@
     .comments {
         display: block;
         .fillForm {
-                width: 100%;
-            }
+            width: 100%;
+        }
     }
 }
     
@@ -35,7 +36,6 @@
     .blog {
         min-height: 30vh;
     }
-
     .blogMain {
         .blogContent {
             flex-wrap: wrap;
@@ -113,7 +113,6 @@
                     margin: 0px auto;
                 }
             }
-
         }
     }
 }

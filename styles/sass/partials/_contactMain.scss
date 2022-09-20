@@ -1,8 +1,7 @@
 @use "variables" as *;
 
 .contactMain {
-    background-color: $iceBlue;
- 
+    background-color: $iceBlue; 
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -19,8 +18,7 @@
     box-shadow: 20px 20px 0px -4px $cyan;
     .nameEmail {
         display: flex;
-        justify-content: space-between;
-   
+        justify-content: space-between;   
         input[type="text"], input[type="email"] {
             height: 50px;
             width: 50%;
@@ -41,7 +39,6 @@
                     outline: none;
                 }
             }
-
             input[type="text"] {
                 margin-right: 10px;
             }
@@ -49,7 +46,6 @@
                 margin-left: 10px;
             }
         }
-
         .message {
             textarea {
                 resize: none;
@@ -62,7 +58,6 @@
                 font-size: 1rem;
                 line-height: 32px;
                 letter-spacing: 2px;
-
                 &::placeholder {
                     font-family: $bodyFont;
                     font-size: 1rem;
@@ -74,7 +69,6 @@
                 }
             }
         }
-
     button {
         color: $iceBlue;
         background-color: $twilight;
