@@ -673,9 +673,9 @@ footer p span {
 }
 .blogMain .blogContent article {
   width: 65%;
-  -webkit-transform: translate(0px, -135px);
-          transform: translate(0px, -135px);
-  margin-bottom: -120px;
+  -webkit-transform: translate(0px, -90px);
+          transform: translate(0px, -90px);
+  margin-bottom: -90px;
 }
 .blogMain .blogContent article .articleImg {
   margin-right: 16px;
