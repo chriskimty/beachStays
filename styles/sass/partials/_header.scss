@@ -12,14 +12,6 @@ header {
         justify-content: space-between;
         align-items: baseline;
         padding: 20px 0;
-        // WILL ADD A FUNCTIONAL JS HAMBURGER MENU IN THE FUTURE!
-        .hamburger {
-            display: none;            
-            svg {
-                background: transparent;
-                color: $iceBlue;                
-            }
-        }
         .logo {
             transition: 0.3s;
             &:hover {
@@ -34,8 +26,11 @@ header {
             li {
             padding: 0 0 0 50px;
             }
+            .highlight {
+                color: $cyan;
+            }
         }
-    }
+    }   
 }
 .headerImgContainer {
         img {
@@ -57,6 +52,47 @@ header {
         bottom: 220px;
     }
 }
+
+// HAMBURGER MENU STYLES
+ .navButton {
+        display: none;
+    }
+
+.slideOutNav {
+    // background-color: rgba(6, 57, 116, 0.36);
+    // background-color: $twilight;
+    width: 100%;
+    // max-width: 506px; 
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -3000px;
+    .hamburgerButton {
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 35px 50px;  
+        li {
+            a {
+                transition: 0.3s;
+                &:hover {
+                color: $cyan;
+                }
+                &:focus {
+                color: $cyan;
+                }
+            }
+        }   
+    }  
+}
+
+.slideOutNavOpen {
+    left: 0px;
+}
+// ^ this class will be added later with JS 
 
 // BLOG
 .blog {

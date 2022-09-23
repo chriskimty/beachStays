@@ -19,13 +19,13 @@
             <div class="wrapper">
                 <a class="logo" href="index.html">Beachstays</a>
                 <ul class="headerMenu">
-                    <li><a href=".index.html">Home</a></li>
+                    <li><a class="highlight" href=".index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <a href="#">
+                <div class="hamburgerButton navButton">
+                    <button>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-menu">
@@ -33,10 +33,30 @@
                             <line x1="3" y1="6" x2="21" y2="6" id="id_108"></line>
                             <line x1="3" y1="18" x2="21" y2="18" id="id_109"></line>
                         </svg>
-                    </a>
-                </div><!-- .hamburger ends -->
+                    </button>
+                </div><!-- .hamburgerButton ends -->
             </div><!-- .wrapper ends -->
         </nav>
+        <div class="slideOutNav">
+            <div class="hamburgerButton xButton">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div><!-- .hamburgerButton ends -->
+            <nav class="slideOutMenu">
+                <ul>
+                    <li><a href=".index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- .slideOutNav ends -->
+
         <div class="headerImgContainer">
             <img src="./assets/header-box.jpg" alt="black-rimmed polarized sunglasses on a beach">
         </div> <!-- .headerImgContainer ends -->
@@ -223,6 +243,8 @@
             <p>Copyright &copy; 2019 HackerYou</p>
         </div><!-- .wrapper ends -->
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

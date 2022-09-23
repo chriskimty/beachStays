@@ -45,3 +45,23 @@ img {
         color: $twilight;
     }
 }
+
+.hamburgerButton {
+    button {
+        background-color: transparent;       
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;    
+        svg {
+            background: transparent;
+            color: $iceBlue;
+            transition: 0.2s;   
+            &:hover {
+                color: $cyan;
+            }
+            &:focus {
+                color: $cyan;
+            }             
+        }
+    }
+}
