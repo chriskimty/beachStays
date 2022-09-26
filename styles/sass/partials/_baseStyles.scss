@@ -50,12 +50,11 @@ img {
     button {
         background-color: transparent;       
         border: none;
-        cursor: pointer;
-        transition: 0.3s;    
+        cursor: pointer; 
         svg {
             background: transparent;
             color: $iceBlue;
-            transition: 0.2s;   
+            transition: 0.3s;   
             &:hover {
                 color: $cyan;
             }
@@ -64,4 +63,8 @@ img {
             }             
         }
     }
+}
+
+.xButton {
+    margin: 25px;
 }

@@ -59,27 +59,32 @@ header {
     }
 
 .slideOutNav {
-    // background-color: rgba(6, 57, 116, 0.36);
-    // background-color: $twilight;
+    display: none;
+    // ^to be only displayed when hamburger button is available (in media query) 
+    background-color: rgba(6, 57, 116, 0.928);
     width: 100%;
-    // max-width: 506px; 
     height: 100vh;
     position: fixed;
     top: 0;
     left: -3000px;
+    transition: 0.3s;
     .hamburgerButton {
         display: flex;
         justify-content: flex-end;
     }
     ul {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
-        padding: 35px 50px;  
+        padding: 35px 50px;
+        letter-spacing: 10px;
+        text-align: center;
         li {
+            padding: 30px;
             a {
                 transition: 0.3s;
                 &:hover {
                 color: $cyan;
+                text-shadow: 3px 5px #50e3c37a;
                 }
                 &:focus {
                 color: $cyan;
@@ -91,8 +96,9 @@ header {
 
 .slideOutNavOpen {
     left: 0px;
+    z-index: 100;
 }
-// ^ this class will be added later with JS 
+// ^ this class to be added later with JS 
 
 // BLOG
 .blog {

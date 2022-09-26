@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌊 Contact | Beachstays</title>
+    <title>🌊 CONTACT | Beachstays</title>
     <!-- LINK TO STYLESHEET -->
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- FONTAWESOME ICONS-->
@@ -23,8 +23,8 @@
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a class="highlight" href="./contact.html">Contact</a></li>
                 </ul>
-                <div class="hamburgerButton">
-                    <a href="#">
+                <div class="hamburgerButton navButton">
+                    <button>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-menu">
@@ -32,10 +32,29 @@
                             <line x1="3" y1="6" x2="21" y2="6" id="id_108"></line>
                             <line x1="3" y1="18" x2="21" y2="18" id="id_109"></line>
                         </svg>
-                    </a>
+                    </button>
                 </div><!-- .hamburger ends -->
             </div> <!-- .wrapper ends -->
         </nav>
+        <div class="slideOutNav">
+            <div class="hamburgerButton xButton">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div><!-- .hamburgerButton ends -->
+            <nav class="slideOutMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- .slideOutNav ends -->
         <div class="wrapper">
             <h1>Get in Touch</h1>
         </div> <!--  .wrapper ends -->
@@ -55,9 +74,13 @@
                     </div><!-- .message ends -->
 
                     <div class="submitButton">
-                        <button type="submit" class="buttonContainer">Submit</button>
+                        <button id="submitButton" type="submit" class="buttonContainer sendForm">Submit</button>
                     </div><!-- .submitButton ends -->
+
                 </form>
+                <!-- REFRESH BUTTON -->
+                <button class="refreshButton" type="button" onClick="window.location.reload();">Click to
+                    Refresh</button>
             </div><!-- .contactForm ends -->
 
             <aside class="contactInfo">
@@ -107,6 +130,8 @@
             <p>Copyright &copy; 2019 HackerYou</p>
         </div><!-- .wrapper ends -->
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

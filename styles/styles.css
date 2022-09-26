@@ -393,20 +393,22 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .hamburgerButton button svg {
   background: transparent;
   color: #FAFFFE;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .hamburgerButton button svg:hover {
   color: #50E3C2;
 }
 .hamburgerButton button svg:focus {
   color: #50E3C2;
+}
+
+.xButton {
+  margin: 25px;
 }
 
 header {
@@ -473,11 +475,15 @@ header .wrapper .headerMenu .highlight {
 }
 
 .slideOutNav {
+  display: none;
+  background-color: rgba(6, 57, 116, 0.928);
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: -3000px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .slideOutNav .hamburgerButton {
   display: -webkit-box;
@@ -488,9 +494,14 @@ header .wrapper .headerMenu .highlight {
           justify-content: flex-end;
 }
 .slideOutNav ul {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   padding: 35px 50px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.slideOutNav ul li {
+  padding: 30px;
 }
 .slideOutNav ul li a {
   -webkit-transition: 0.3s;
@@ -498,6 +509,7 @@ header .wrapper .headerMenu .highlight {
 }
 .slideOutNav ul li a:hover {
   color: #50E3C2;
+  text-shadow: 3px 5px rgba(80, 227, 195, 0.4784313725);
 }
 .slideOutNav ul li a:focus {
   color: #50E3C2;
@@ -505,6 +517,7 @@ header .wrapper .headerMenu .highlight {
 
 .slideOutNavOpen {
   left: 0px;
+  z-index: 100;
 }
 
 .blog {
@@ -878,6 +891,11 @@ footer p span {
   -webkit-box-shadow: 20px 20px 0px -4px #50E3C2;
           box-shadow: 20px 20px 0px -4px #50E3C2;
 }
+.fillForm h2 {
+  color: #063974;
+  font-weight: lighter;
+  max-width: 650px;
+}
 .fillForm .nameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,6 +1023,11 @@ footer p span {
   color: #063974;
 }
 
+.refreshButton {
+  display: none;
+  font-family: "Playfair Display";
+}
+
 .contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1057,6 +1080,9 @@ footer p span {
     display: none;
   }
   header .wrapper .hamburgerButton {
+    display: block;
+  }
+  header .slideOutNav {
     display: block;
   }
 }
