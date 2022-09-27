@@ -330,16 +330,12 @@ footer p {
   color: #FAFFFE;
 }
 
-.blog h1, .contact h1 {
+.blogMain h1, .contactMain h1 {
   font-family: "Lato";
   color: #FAFFFE;
   font-size: 4.35rem;
   line-height: 2.9rem;
   letter-spacing: 0.45rem;
-}
-
-.blog h1, .contact h1 {
-  padding-top: 50px;
 }
 
 .wrapper {
@@ -411,11 +407,22 @@ img {
   margin: 25px;
 }
 
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 header {
   background-image: url(../assets/home-image-1.jpg);
   background-position: top center;
   background-size: cover;
-  min-height: 78vh;
+  height: max(78vh, 700px);
   position: relative;
 }
 header .wrapper {
@@ -494,14 +501,14 @@ header .wrapper .headerMenu .highlight {
           justify-content: flex-end;
 }
 .slideOutNav ul {
-  font-size: 2.5rem;
+  font-size: max(2rem, 45px);
   text-transform: uppercase;
-  padding: 35px 50px;
+  padding: 35px 0px;
   letter-spacing: 10px;
   text-align: center;
 }
 .slideOutNav ul li {
-  padding: 30px;
+  padding: 30px 0px;
 }
 .slideOutNav ul li a {
   -webkit-transition: 0.3s;
@@ -524,14 +531,14 @@ header .wrapper .headerMenu .highlight {
   background-image: url(../assets/blog-image-1.jpg);
   background-position: top center;
   background-size: cover;
-  min-height: 50vh;
+  height: max(60vh, 450px);
 }
 
 .contact {
   background-image: url(../assets/contact-image-1.jpg);
   background-position: top center;
   background-size: cover;
-  min-height: 50vh;
+  height: max(50vh, 400px);
 }
 
 .visit .wrapper {
@@ -634,6 +641,9 @@ header .wrapper .headerMenu .highlight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 .articles .planAhead .articleImgContainer {
   width: 50%;
@@ -667,6 +677,9 @@ header .wrapper .headerMenu .highlight {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  margin: 0 auto;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 .articles .newLocations .articleImgContainer {
   width: 50%;
@@ -679,6 +692,7 @@ header .wrapper .headerMenu .highlight {
   right: 0;
   -webkit-box-shadow: -29px 29px 0px -10px #50E3C2;
           box-shadow: -29px 29px 0px -10px #50E3C2;
+  z-index: 1000;
 }
 .articles .newLocations .articleTextContainer {
   width: 50%;
@@ -694,8 +708,66 @@ header .wrapper .headerMenu .highlight {
   margin-top: 8%;
 }
 
-.banner img {
-  width: 100vw;
+.carousel {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #D2F9F1;
+}
+.carousel .slideshow {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .slideshow .slide {
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.carousel .slideshow .slide img {
+  width: 100%;
+  height: max(40vh, 400px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .slideshow .change {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 100;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: #D2F9F1;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.carousel .slideshow .change:hover {
+  opacity: 0.8;
+}
+.carousel .slideshow .change:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.carousel .slideshow .nextImage {
+  top: 45%;
+  right: 2%;
+}
+.carousel .slideshow .previousImage {
+  top: 45%;
+  left: 2%;
 }
 
 .freeTrip .wrapper {
@@ -731,6 +803,11 @@ footer p span {
   font-size: 0.6rem;
 }
 
+.blogMain h1 {
+  -webkit-transform: translate(0px, -270px);
+          transform: translate(0px, -270px);
+  margin-bottom: -155px;
+}
 .blogMain .blogContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,9 +818,9 @@ footer p span {
 }
 .blogMain .blogContent article {
   width: 65%;
-  -webkit-transform: translate(0px, -90px);
-          transform: translate(0px, -90px);
-  margin-bottom: -90px;
+  -webkit-transform: translate(0px, -80px);
+          transform: translate(0px, -80px);
+  margin-bottom: -80px;
 }
 .blogMain .blogContent article .articleImg {
   margin-right: 16px;
@@ -871,6 +948,10 @@ footer p span {
 .contactMain {
   background-color: #FAFFFE;
 }
+.contactMain h1 {
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
 .contactMain .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,8 +959,9 @@ footer p span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translate(0px, -110px);
-          transform: translate(0px, -110px);
+  -webkit-transform: translate(0px, -250px);
+          transform: translate(0px, -250px);
+  margin-bottom: -50px;
   width: 90%;
 }
 
@@ -887,6 +969,7 @@ footer p span {
   background-color: #FAFFFE;
   padding: 60px 60px 0px 60px;
   margin: 0px;
+  margin-bottom: -100px;
   text-align: center;
   -webkit-box-shadow: 20px 20px 0px -4px #50E3C2;
           box-shadow: 20px 20px 0px -4px #50E3C2;
@@ -1100,7 +1183,7 @@ footer p span {
 }
 @media (max-width: 1200px) {
   .homeHeader {
-    min-height: 60vh;
+    height: max(60vh, 500px);
   }
   .homeHeader .headerTextContainer h1 {
     left: 20%;
@@ -1117,9 +1200,6 @@ footer p span {
 @media (max-width: 992px) {
   .homeHeader .wrapper, .homeMain .wrapper {
     width: 90%;
-  }
-  .homeHeader {
-    min-height: 48vh;
   }
   .homeHeader .headerImgContainer {
     display: none;
@@ -1150,9 +1230,6 @@ footer p span {
   }
 }
 @media (max-width: 768px) {
-  .homeHeader {
-    min-height: 45vh;
-  }
   .homeHeader .headerTextContainer h1 {
     font-size: 13vw;
   }
@@ -1225,7 +1302,7 @@ footer p span {
 }
 @media (max-width: 480px) {
   .homeHeader {
-    min-height: 40vh;
+    height: max(40vh, 350px);
   }
   .homeHeader .headerTextContainer h1 {
     font-size: clamp(2.25rem, 2vw, 2.5rem);
@@ -1262,7 +1339,10 @@ footer p span {
 }
 @media (max-width: 992px) {
   .blog {
-    min-height: 30vh;
+    height: max(50vh, 350px);
+  }
+  .blogMain h1 {
+    margin-bottom: -90px;
   }
   .blogMain .blogContent {
     -ms-flex-wrap: wrap;
@@ -1299,6 +1379,13 @@ footer p span {
   }
 }
 @media (max-width: 670px) {
+  .blog {
+    height: max(40vh, 250px);
+  }
+  .blogMain h1 {
+    -webkit-transform: translate(0px, -180px);
+            transform: translate(0px, -180px);
+  }
   .blogMain .blogContent article {
     width: 100%;
   }
@@ -1345,9 +1432,20 @@ footer p span {
   }
 }
 @media (max-width: 992px) {
+  .contact {
+    height: max(45vh, 350px);
+  }
+  .contactMain h1 {
+    padding-left: 0px;
+  }
   .contactMain .wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-transform: translate(0px, -200px);
+            transform: translate(0px, -200px);
+  }
+  .contactMain .wrapper .fillForm {
+    margin-bottom: -50px;
   }
   .contactMain .wrapper .fillForm .nameEmail {
     -ms-flex-wrap: wrap;
@@ -1366,12 +1464,11 @@ footer p span {
   }
 }
 @media (max-width: 768px) {
-  .contact h1 {
+  .contactMain h1 {
     line-height: 4.35rem;
     width: 100%;
     text-align: center;
     font-size: clamp(4rem, 5vw, 4.35rem);
-    padding-bottom: 50px;
   }
   .contactMain .wrapper {
     -webkit-box-orient: vertical;
@@ -1381,10 +1478,13 @@ footer p span {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transform: translate(0px, -300px);
+            transform: translate(0px, -300px);
   }
   .contactMain .wrapper .fillForm {
     width: 100%;
     padding: 30px 30px 0px 30px;
+    margin-bottom: 0px;
   }
   .contactMain .wrapper .fillForm .message textarea {
     margin-top: 40px;
@@ -1394,7 +1494,7 @@ footer p span {
     margin: 40px 0;
   }
   .contactMain .contactInfo {
-    margin: 0px auto;
+    margin: 0px auto -150px auto;
     padding: 40px 0 0 0;
     text-align: center;
   }

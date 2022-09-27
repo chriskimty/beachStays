@@ -56,15 +56,15 @@
                 </ul>
             </nav>
         </div><!-- .slideOutNav ends -->
-        <div class="heading wrapper">
-            <h1>Blog</h1>
-        </div> <!--  .wrapper ends -->
+
     </header>
 
     <main class="blogMain">
+        <div class="heading wrapper">
+            <h1>Blog</h1>
+        </div> <!--  .heading .wrapper ends -->
         <section class="blogContent">
             <article>
-
                 <div class="articleImg">
                     <img src="./assets/post-image.jpg" alt="summer house at dusk with a garden of reed grass">
                 </div><!-- .articleImg ends -->
@@ -167,10 +167,14 @@
             <div class="fillForm">
                 <form action="#" method="#" class="myForm" name="myForm">
                     <div class="nameEmail">
+                        <label for="name" class="visuallyHidden">Name</label>
                         <input type="text" id="name" name="name" required placeholder="Name">
+
+                        <label for="email" class="visuallyHidden">Email</label>
                         <input type="email" id="email" name="email" required placeholder="Email address">
                     </div> <!-- .nameEmail ends -->
                     <div class="message">
+                        <label for="message" class="visuallyHidden">Message</label>
                         <textarea name="message" id="message" cols="55" rows="6" minlength="1" maxlength="500" required
                             placeholder="Comment"></textarea>
                     </div><!-- .message ends -->
@@ -190,6 +194,7 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./contactForm.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,17 @@
 @use "variables" as *;
 
 .blogMain {
+    h1 {
+        transform: translate(0px, -270px);
+        margin-bottom: -155px;
+    }
     .blogContent {
         display: flex;
         justify-content: space-between;
         article {
             width: 65%;
-            transform: translate(0px, -90px);
-            margin-bottom: -90px;
+            transform: translate(0px, -80px);
+            margin-bottom: -80px;
             .articleImg {
                 margin-right: 16px;
                 img {

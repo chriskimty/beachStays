@@ -55,20 +55,25 @@
                 </ul>
             </nav>
         </div><!-- .slideOutNav ends -->
-        <div class="wrapper">
-            <h1>Get in Touch</h1>
-        </div> <!--  .wrapper ends -->
+
     </header>
 
     <main class="contactMain">
         <div class="wrapper">
+            <h1>Get in Touch</h1>
+        </div> <!--  .wrapper ends -->
+        <div class="wrapper">
             <div class="fillForm">
                 <form action="#" method="#" class="myForm" name="myForm">
                     <div class="nameEmail">
+                        <label for="name" class="visuallyHidden">Name</label>
                         <input type="text" id="name" name="name" required placeholder="Name">
+
+                        <label for="email" class="visuallyHidden">Email</label>
                         <input type="email" id="email" name="email" required placeholder="Email address">
                     </div> <!-- .nameEmail ends -->
                     <div class="message">
+                        <label for="message" class="visuallyHidden">Message</label>
                         <textarea name="message" id="message" rows="6" minlength="1" maxlength="500" required
                             placeholder="Message"></textarea>
                     </div><!-- .message ends -->
@@ -132,6 +137,7 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./contactForm.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 
 ## Description
 
-[Beachstays 2.0](https://AddNewLink.com) is an extension to [Project 1: Beachstays](papaya-alpaca-edc2a9.netlify.app/) where additional UI elements were added to the original design using JavaScript. 
+[Beachstays 2.0](https://welcometobeachstays.netlify.app/) is an extension to [Project 1: Beachstays](papaya-alpaca-edc2a9.netlify.app/) where additional UI elements were added to the original design using JavaScript. 
 
 New elements include:
 * A functional hamburger menu with a slide-out navigation

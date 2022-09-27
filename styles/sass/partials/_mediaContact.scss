@@ -9,10 +9,18 @@
 
 // LAPTOP 992px //
 @media (max-width: 992px) {
+    .contact {
+        height: max(45vh, 350px);
+    }
     .contactMain {
+        h1 {
+        padding-left: 0px;
+        }
         .wrapper {
             justify-content: space-around;
+            transform: translate(0px, -200px);
             .fillForm {
+                margin-bottom: -50px;
                 .nameEmail {
                     flex-wrap: wrap;
                     input[type="text"], input[type="email"] {
@@ -36,22 +44,21 @@
 
 // TABLET 768px
 @media (max-width: 768px) {
-    .contact {
+    .contactMain {
         h1 {
             line-height: 4.35rem;
             width: 100%;
             text-align: center;
             font-size: clamp(4rem, 5vw, 4.35rem);
-            padding-bottom: 50px;
         }
-    }
-    .contactMain {
         .wrapper {
             flex-direction: column;
             align-items: center;
+            transform: translate(0px, -300px);
             .fillForm {
                 width: 100%;
                 padding: 30px 30px 0px 30px;
+                margin-bottom: 0px;
                 .message {
                     textarea {
                         margin-top: 40px;
@@ -64,7 +71,7 @@
             }
         }
         .contactInfo {
-            margin: 0px auto;
+            margin: 0px auto -150px auto;
             padding: 40px 0 0 0;
             text-align: center;
             .socialMedia {

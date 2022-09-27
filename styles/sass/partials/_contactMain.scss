@@ -2,20 +2,28 @@
 
 .contactMain {
     background-color: $iceBlue; 
+    h1 {
+        padding-left: 60px;
+        padding-bottom: 30px;
+    }
     .wrapper {
         display: flex;
         justify-content: space-between;
-        transform: translate(0px, -110px);
+        transform: translate(0px, -250px);
+        margin-bottom: -50px;
         width: 90%;
     }
+    
 }
 
 .fillForm {
     background-color: $iceBlue;
     padding: 60px 60px 0px 60px;
     margin: 0px;
+    margin-bottom: -100px;
     text-align: center;
     box-shadow: 20px 20px 0px -4px $cyan;
+    
     h2 {
         color: $twilight;
         font-weight: lighter;

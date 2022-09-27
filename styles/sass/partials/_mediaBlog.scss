@@ -34,9 +34,12 @@
 // LAPTOP 992px //
 @media (max-width: 992px) {
     .blog {
-        min-height: 30vh;
+        height: max(50vh, 350px);
     }
     .blogMain {
+        h1 {
+        margin-bottom: -90px;
+        }
         .blogContent {
             flex-wrap: wrap;
             flex-direction: column-reverse;
@@ -67,7 +70,13 @@
 
 // SMALLER SCREEN 670PX and below //
 @media (max-width: 670px) {
+    .blog {
+        height: max(40vh, 250px);
+    }
     .blogMain {
+        h1 {
+        transform: translate(0px, -180px);
+        }
         .blogContent {
             article {
                 width: 100%;

@@ -5,7 +5,8 @@ header {
     // ^HOMEPAGE index.html
     background-position: top center;
     background-size: cover;
-    min-height: 78vh;
+    height: max(78vh, 700px);
+    // not be smaller than 700px or 60vh (whichever is bigger)
     position: relative;
     .wrapper {
         display: flex;
@@ -73,13 +74,13 @@ header {
         justify-content: flex-end;
     }
     ul {
-        font-size: 2.5rem;
+        font-size: max(2rem, 45px);
         text-transform: uppercase;
-        padding: 35px 50px;
+        padding: 35px 0px;
         letter-spacing: 10px;
         text-align: center;
         li {
-            padding: 30px;
+            padding: 30px 0px;
             a {
                 transition: 0.3s;
                 &:hover {
@@ -105,7 +106,7 @@ header {
     background-image: url(../assets/blog-image-1.jpg);
     background-position: top center;
     background-size: cover;
-    min-height: 50vh;
+    height: max(60vh, 450px);
 }
 
 // GET IN TOUCH/CONTACT
@@ -113,5 +114,5 @@ header {
     background-image: url(../assets/contact-image-1.jpg);
     background-position: top center;
     background-size: cover;
-    min-height: 50vh;
+    height: max(50vh, 400px);
 }

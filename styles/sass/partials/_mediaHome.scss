@@ -3,7 +3,7 @@
 //DESKTOP 1200px
 @media (max-width: 1200px) {
     .homeHeader {
-        min-height: 60vh;
+        height: max(60vh, 500px);
          .headerTextContainer {
             h1 {
                 left: 20%;
@@ -30,7 +30,6 @@
         }
     }
     .homeHeader {
-        min-height: 48vh;
         .headerImgContainer {
             display: none;
         }
@@ -74,7 +73,7 @@
 // TABLET 768px
 @media (max-width: 768px) {
     .homeHeader {
-         min-height: 45vh;
+        //  min-height: 45vh;
         .headerTextContainer {
             h1 {
                 font-size: 13vw;
@@ -166,7 +165,8 @@
 // MOBILE 480px
 @media (max-width: 480px) {
     .homeHeader {
-        min-height: 40vh;
+        height: max(40vh, 350px);
+        // min-height: 40vh;
         .headerTextContainer {
             h1 {
                 font-size: clamp(2.25rem, 2vw, 2.5rem);

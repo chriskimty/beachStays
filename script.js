@@ -7,7 +7,7 @@
     - on click, hide the slide-out menu
     - on click, hide the class of hamburger menu */
 
-// Defining Variables
+// Selecting Elements
 const hamElement = document.querySelector(".navButton");
 const slideOutMenu = document.querySelector(".slideOutNav");
 const hamCloseButton = document.querySelector(".xButton");
@@ -24,50 +24,56 @@ hamElement.addEventListener("click", () => {
 hamCloseButton.addEventListener("click", () => {
     slideOutMenu.classList.remove("slideOutNavOpen");
     hamElement.style.display = "block";
-})
-
-// CONTACT FORM 
-/* Upon submission of form (conditional - content should not be blank): 
-    - remove the contact form
-    - replace with confirmation message on screen (create)
-    - clear original values entered 
-    - create refresh button to return to original page
-*/
-
-// Defining Variables 
-const submitForm = document.querySelector(".sendForm");
-const nameElement = document.querySelector("input");
-const emailElement = document.querySelector("input#email");
-const messageElement = document.querySelector("textarea");
-const contactForm = document.querySelector(".myForm");
-const refreshButton = document.querySelector(".refreshButton");
-
-// Function for contact form 
-contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    if (contactForm !== '') {
-        // Create div & h2 submission confirmation message
-        let div = document.createElement('div');
-        div.id = 'newText';
-        div.className = 'new';
-        let h2 = document.createElement('h2');
-        const fullName = nameElement.value;
-        h2.textContent = `Thank you for your message, ${fullName}. We will get back to you within 1-2 business days!`;
-        div.appendChild(h2);
-        const removedForm = document.querySelector(".fillForm");
-        removedForm.appendChild(div);
-
-    // Clear values 
-        nameElement.value = "";
-        emailElement.value = "";
-        messageElement.value = "",
-            
-    // Remove contact form elements
-            contactForm.style.display = "none";
-        
-    // Refresh Button
-        refreshButton.style.display = "block";
-    }  
+    // how to remove the hamburger nav button when resizing the window when the X button is clicked rather than the other links? 
 })
 
 // IMAGE CAROUSEL 
+
+// SELECTING ELEMENTS
+// Select all the slides (.slide)
+const slideShow = document.querySelectorAll(".slide");
+// select next slide button
+const nextSlide = document.querySelector(".nextImage");
+// select previous slide button
+const previousSlide = document.querySelector(".previousImage");
+
+// loop through images and set each translateX property to index * 100% 
+slideShow.forEach((slide, index) => {
+  slide.style.transform = `translateX(${index * 100}%)`;
+});
+
+// current slide counter
+let currentSlide = 0;
+// maximum number of slides
+let maxSlide = slideShow.length -1;
+
+// NEXTSLIDE: add event listener and navigation function
+nextSlide.addEventListener("click", function () {
+    // check if current slide is the last and reset current slide
+
+    if (currentSlide === maxSlide) {
+        currentSlide = 0;
+    } else {
+       currentSlide++; 
+    }
+     
+  slideShow.forEach((slide, index) => {
+    slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+  });
+});
+
+// PREVIOUS SLIDE: add event listener and navigation function
+previousSlide.addEventListener("click", function () {
+    // check if current slide is the first and reset current slide
+
+    if (currentSlide === 0) {
+        currentSlide = maxSlide;
+    } else {
+       currentSlide--; 
+    }
+     
+  slideShow.forEach((slide, index) => {
+    slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+  });
+});
+
