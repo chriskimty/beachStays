@@ -15,8 +15,7 @@ const hamCloseButton = document.querySelector(".xButton");
 // On click, open slide-out nav and remove hamburger icon
 hamElement.addEventListener("click", () => {
     slideOutMenu.classList.add("slideOutNavOpen");
-    // hamElement.style.display = "none";
-    // *COME BACK TO THIS. Not sure how to remove and put back hamElement and when not clicking on one of the links but when the XButton is clicked, and when window is resized, the hamElement doesn't go away. 
+    hamElement.style.opacity = 0;
 
     /* personal note: 
     what I target.object.method (add is exclusive to the classList). Classlist specifies that this is a class so you don't need the dot! */
@@ -25,7 +24,7 @@ hamElement.addEventListener("click", () => {
 // On click, close slide-out nav and show hamburger icon
 hamCloseButton.addEventListener("click", () => {
     slideOutMenu.classList.remove("slideOutNavOpen");
-    // hamElement.style.display = "block";
+    hamElement.style.opacity = 100;
 })
 
 // CONTACT FORM 
